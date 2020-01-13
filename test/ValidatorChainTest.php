@@ -27,13 +27,13 @@ class ValidatorChainTest extends TestCase
      */
     protected $validator;
 
-    public function setUp()
+    protected function setUp(): void
     {
         AbstractValidator::setMessageLength(-1);
         $this->validator = new ValidatorChain();
     }
 
-    public function tearDown()
+    protected function tearDown(): void
     {
         AbstractValidator::setDefaultTranslator(null);
         AbstractValidator::setMessageLength(-1);

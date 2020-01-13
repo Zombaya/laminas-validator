@@ -21,7 +21,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ValidatorPluginManagerTest extends TestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         $this->validators = new ValidatorPluginManager(new ServiceManager);
     }

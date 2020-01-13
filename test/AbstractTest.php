@@ -30,12 +30,12 @@ class AbstractTest extends TestCase
      */
     protected $errorOccurred = false;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->validator = new TestAsset\ConcreteValidator();
     }
 
-    public function tearDown()
+    protected function tearDown(): void
     {
         AbstractValidator::setDefaultTranslator(null, 'default');
     }

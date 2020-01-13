@@ -25,7 +25,7 @@ class EmailAddressTest extends TestCase
     /** @var bool */
     public $multipleOptionsDetected;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->validator = new EmailAddress();
     }

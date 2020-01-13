@@ -23,7 +23,7 @@ class NotEmptyTest extends TestCase
      */
     protected $validator;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->validator = new NotEmpty();
     }

@@ -20,7 +20,7 @@ class FilesSizeTest extends TestCase
     /** @var bool */
     public $multipleOptionsDetected;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->multipleOptionsDetected = false;
     }
